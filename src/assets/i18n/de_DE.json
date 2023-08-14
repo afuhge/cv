@@ -1,0 +1,64 @@
+{
+  "header": {
+    "download": "Download"
+  },
+  "resume": {
+    "header": {
+      "name": "Annika Fuhge",
+      "title": "Frontend Entwicklerin",
+      "quote": "Ich liebe es kreativ zu sein, mich selbst zu organisieren, aber auch als Team zu agieren. Mir ist meine persönliche Entwicklung besonders wichtig, sodass ich begeistert und motiviert an neue Dinge herangehe."
+    },
+    "content": {
+      "work-experience": {
+        "headline": "Berufserfahrung",
+        "douglas": {
+          "company": "Parfümerie Douglas GmbH",
+          "title": "Junior Frontend Entwicklerin",
+          "description": "Entwicklung und Weiterentwicklung von internationalen CRM Produkten wie Kassensysteme und Kundenmanagement.",
+          "date": "Mai 2021 - heute"
+        },
+        "tu-dortmund-wimi": {
+          "company": "TU Dortmund",
+          "title": "Wissenschaftliche Mitarbeiterin",
+          "description": "Entwicklung von domänenspezifischen Sprachen (DSLs) inkl. Modeltransformation mit MPS, Weiterentwicklung von bestehenden DSLs mit Fokus auf UI/UX.",
+          "date": "August 2020 - April 2021"
+        },
+        "tu-dortmund": {
+          "company": "TU Dortmund",
+          "title": "Studentische/Wissenschaftliche Hilfskraft",
+          "description": "Weiterentwicklung von DSLs durch Views, Validierung und nutzerfreundlichem Design.",
+          "date": "Juni 2016 - Juli 2020"
+        }
+      },
+      "education": {
+        "headline": "Bildung",
+        "master": {
+          "company": "TU Dortmund",
+          "title": "Master of Science in Informatik",
+          "description": "LiveDocs: Document-Centric Process Management",
+          "date": "April 2018 - Juli 2020"
+        },
+        "bachelor": {
+          "company": "TU Dortmund",
+          "title": "Bachelor of Science in Informatik",
+          "description": "Graphische Modellierung von Cinco Produktspezifikationen",
+          "date": "Oktober 2014 - Mai 2018"
+        }
+      },
+      "skills": {
+        "headline": "Fähigkeiten",
+        "language": {
+          "title": "Sprachen",
+          "german": "Deutsch",
+          "english": "Englisch"
+        },
+        "programming-languages": {
+          "title": "Programmier-/Markupsprachen"
+        }
+      },
+      "knowledge": {
+        "headline": "Kenntnisse"
+      }
+    }
+  }
+}

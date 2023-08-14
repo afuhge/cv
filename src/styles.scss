@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "../node_modules/paper-css/paper.css";
+
+@page {
+  size: A4;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+body {
+  @apply bg-gray-200 dark:bg-gray-900;
+}
+
+.quote {
+  font-size: 18px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.primary-bg-color {
+  @apply bg-[#008B8BFF] dark:bg-teal-300;
+}
+.primary-text-color {
+  @apply text-[#008B8BFF] dark:text-teal-300;
+}
+
+.item:hover {
+  @apply border-b-2 border-[#008B8BFF] dark:border-teal-300;
+}
+
+.skills {
+  @apply italic flex flex-wrap -m-0.5 primary-text-color;
+}
+
+.title {
+  background-color: rgba(0, 139, 139, 0.3);
+  width: 10%;
+  font-size: 20px;
+}
+
+.title-dark {
+  background-color: rgba(94, 234, 212, 0.2);
+  width: 10%;
+  font-size: 20px;
+}
+
+.badge {
+  @apply px-2 py-px primary-bg-color dark:text-gray-800 font-semibold rounded-md;
+}
+
+.subtitle {
+  @apply italic font-semibold;
+}
+
+::selection {
+  color: white;
+  background: cadetblue;
+}

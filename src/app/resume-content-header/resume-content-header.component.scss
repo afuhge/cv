@@ -1,0 +1,42 @@
+ .quote-content::before {
+  content: "\201C";
+  position: absolute;
+  font-size: 120px;
+  color: rgba(255, 255, 255, 0.15);
+  font-family: 'Monospaced', sans-serif;
+  top: -65%;
+  left: -10%;
+}
+
+.quotation-marks {
+  position: relative;
+}
+
+ .quote-content::after {
+  content: "\201D";
+  font-size: 120px;color: rgba(255, 255, 255, 0.15);
+  font-family: 'Monospaced', sans-serif;
+  position: absolute;
+  top: 35%;
+  left: 65%;
+}
+
+.quote-content-dark::before {
+  content: "\201C";
+  position: absolute;
+  font-size: 120px;
+  color: rgba(24, 63, 57, 0.15);
+  font-family: 'Monospaced', sans-serif;
+  top: -65%;
+  left: -10%;
+}
+
+ .quote-content-dark::after {
+  content: "\201D";
+  font-size: 120px;
+   color: rgba(24, 63, 57, 0.15);
+  font-family: 'Monospaced', sans-serif;
+  position: absolute;
+  top: 35%;
+  left: 65%;
+}

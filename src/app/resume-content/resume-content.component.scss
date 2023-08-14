@@ -1,0 +1,13 @@
+.grid-layout {
+  column-gap: 3rem;
+  column-rule: solid 2px darkcyan;
+  column-fill: balance;
+  columns: 2 15em;
+}
+
+.grid-layout-dark {
+  column-gap: 3rem;
+  column-rule: solid 2px #2dd4bf;
+  column-fill: balance;
+  columns: 2 15em;
+}

@@ -1,0 +1,54 @@
+<div class="space-y-4">
+  <div [ngClass]="{'title-dark': isDarkTheme, 'title': !isDarkTheme}">
+          <span class="highlight py-2 px-4 font-semibold">
+             {{ 'resume.content.education.headline' | translate }}
+          </span>
+  </div>
+
+  <div class="space-y-4 divide-y">
+    <div class="space-y-2">
+      <div class="flex justify-between items-center text-xs"> <!-- where when -->
+        <a href="https://www.tu-dortmund.de/" target="_blank" class="flex space-x-2 cursor-pointer hover:font-semibold">
+          <div>
+            {{ 'resume.content.education.master.company' | translate }}
+          </div>
+          <fa-icon [icon]="link" class="text-gray-500 dark:text-gray-300"></fa-icon>
+        </a>
+        <div> {{ 'resume.content.education.master.date' | translate }}</div>
+      </div>
+      <div class="font-semibold"> {{ 'resume.content.education.master.title' | translate }}</div>
+      <div>
+        {{ 'resume.content.education.master.description' | translate }}
+      </div>
+    </div>
+
+    <div class="space-y-2 pt-4">
+      <div class="flex justify-between items-center text-xs" > <!-- where when -->
+        <a href="https://www.tu-dortmund.de/" target="_blank" class=" hover:font-semibold flex space-x-2 cursor-pointer">
+          <div>
+            {{ 'resume.content.education.bachelor.company' | translate }}
+          </div>
+          <fa-icon [icon]="link" class="text-gray-500 dark:text-gray-300"></fa-icon>
+        </a>
+        <div>  {{ 'resume.content.education.bachelor.date' | translate }}</div>
+      </div>
+      <div class="font-semibold">  {{ 'resume.content.education.bachelor.title' | translate }}</div>
+      <div>
+        {{ 'resume.content.education.bachelor.description' | translate }}
+      </div>
+    </div>
+
+   <!-- <div class="space-y-3 pt-4">
+      <div class="flex justify-between text-xs"> &lt;!&ndash; where when &ndash;&gt;
+        <div>Riesener Gymnasium Gladbeck
+          <fa-icon [icon]="link" class="text-gray-600"></fa-icon>
+        </div>
+        <div>2006 - Juni 2014</div>
+      </div>
+      <div class="font-semibold">Allgemeine Hochschulreife (Abitur)</div>
+    </div>-->
+
+
+  </div>
+
+</div>

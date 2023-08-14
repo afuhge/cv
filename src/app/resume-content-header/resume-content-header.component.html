@@ -1,0 +1,37 @@
+<div class="text-white dark:text-gray-700 p-6 space-y-4 divide-y-2 dark:divide-gray-700 primary-bg-color">
+  <div class="grid grid-cols-6 gap-2 items-center">
+    <div class="space-y-1 flex flex-col items-center col-span-2">
+      <div>
+        <img class="rounded-full block border-2 border-white dark:border-gray-700 w-[96px] h-[96px]" src="assets/Fuhge.jpg">
+      </div>
+      <div class="font-semibold text-lg">
+        {{ 'resume.header.name' | translate }}
+      </div>
+      <div class="text-lg tracking-wide">
+        {{ 'resume.header.title' | translate }}
+      </div>
+    </div>
+
+    <div class="quote quotation-marks tracking-wider leading-relaxed col-span-4">
+      <span [ngClass]="{'quote-content': (colorThemeService.isDarkTheme$ | async) === false,'quote-content-dark': (colorThemeService.isDarkTheme$ | async) === true}">
+      {{ 'resume.header.quote' | translate }}
+      </span>
+    </div>
+  </div>
+
+  <div class="pt-4 space-x-10 flex justify-center flex-wrap">
+    <div class="flex space-x-2 cursor-pointer hover:font-semibold">
+      <fa-icon [icon]="envelope"></fa-icon>
+      <a href="mailto:annikafuhge96@gmail.com" target="_blank">annikafuhge96@gmail.com</a>
+    </div>
+    <div class="flex space-x-2 cursor-pointer hover:font-semibold">
+      <fa-icon [icon]="github"></fa-icon>
+      <a href="https://github.com/afuhge">afuhge</a>
+    </div>
+    <div class="flex space-x-2">
+      <fa-icon [icon]="birthdayCake"></fa-icon>
+      <div>27.06.1996</div>
+    </div>
+  </div>
+</div>
+
