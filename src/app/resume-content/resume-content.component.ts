@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { IconDefinition } from '@fortawesome/free-regular-svg-icons';
-import {  faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { ColorThemeService } from '../../services/color-theme.service';
 import { WorkExperienceComponent } from '../parts/work-experience/work-experience.component';
 import { EducationComponent } from '../parts/education/education.component';

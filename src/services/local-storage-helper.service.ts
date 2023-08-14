@@ -4,8 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class LocalStorageHelperService {
-  public static LANGUAGE: string = 'language';
-  public static THEME: string = 'theme';
+  public static LANGUAGE = 'language';
+  public static THEME = 'theme';
 
   public setLanguageItem(item: string): void {
     localStorage.setItem(LocalStorageHelperService.LANGUAGE, item);

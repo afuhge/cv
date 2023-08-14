@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ColorThemeService } from '../../../services/color-theme.service';
-import { AsyncPipe, CommonModule, NgFor, NgForOf } from '@angular/common';
+import { AsyncPipe, CommonModule, NgFor } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
