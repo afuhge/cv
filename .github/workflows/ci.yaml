@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+  linting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Set up node.js and lint code
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+      - run: npm ci && npm run lint
+
+
+  build:
+    needs: linting
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Set up node.js and build code
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+      - run: npm install && npm run build -- --prod --base-href /cv/ --deploy-url /cv/
+      - name: Upload build files
+        uses: actions/upload-artifact@master
+        with:
+          name: build-app
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download build files
+        uses: actions/download-artifact@master
+        with:
+          name: build-app
+          path: ./dist
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
