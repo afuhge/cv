@@ -2,9 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ResumeContentContainerModule } from './resume-content-container/resume-content-container.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { HeaderModule } from './header/header.module';
 import {
   MissingTranslationHandler,
   MissingTranslationHandlerParams,
@@ -13,6 +11,8 @@ import {
 } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HeaderComponent } from './header/header.component';
+import { ResumeContentContainerComponent } from './resume-content-container/resume-content-container.component';
 
 
 export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
@@ -31,9 +31,7 @@ export class MyMissingTranslationHandler implements MissingTranslationHandler {
   ],
   imports: [
     BrowserModule,
-    ResumeContentContainerModule,
     FontAwesomeModule,
-    HeaderModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
@@ -41,8 +39,10 @@ export class MyMissingTranslationHandler implements MissingTranslationHandler {
         useFactory: (createTranslateLoader),
         deps: [HttpClient]
       },
-      missingTranslationHandler: {provide: MissingTranslationHandler, useClass: MyMissingTranslationHandler},
-    })
+      missingTranslationHandler: { provide: MissingTranslationHandler, useClass: MyMissingTranslationHandler },
+    }),
+    HeaderComponent,
+    ResumeContentContainerComponent,
   ],
   providers: [
     HttpClient,

@@ -4,11 +4,20 @@ import { faLanguage, faMoon, faPrint, faSun } from '@fortawesome/free-solid-svg-
 import { ColorThemeService } from '../../services/color-theme.service';
 import { LanguageService } from '../../services/language.service';
 import { LocalStorageHelperService } from '../../services/local-storage-helper.service';
+import { TranslateModule } from '@ngx-translate/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  standalone: true,
+  imports: [
+    TranslateModule,
+    FontAwesomeModule,
+    CommonModule,
+  ]
 })
 export class HeaderComponent implements OnInit {
   print: IconDefinition = faPrint;

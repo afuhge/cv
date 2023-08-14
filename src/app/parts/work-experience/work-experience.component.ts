@@ -1,23 +1,29 @@
 import { Component } from '@angular/core';
-import { IconDefinition } from '@fortawesome/free-regular-svg-icons';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCalendar, IconDefinition } from '@fortawesome/free-regular-svg-icons';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { ColorThemeService } from '../../../services/color-theme.service';
+import { AsyncPipe, CommonModule, NgIf } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'app-work-experience',
   templateUrl: './work-experience.component.html',
+  standalone: true,
+  imports: [
+    NgIf,
+    AsyncPipe,
+    TranslateModule,
+    FontAwesomeModule,
+    CommonModule,
+  ]
 })
 export class WorkExperienceComponent {
-  public link: IconDefinition = faExternalLinkAlt;
-  isDarkTheme = false;
+  public date: IconDefinition = faLocationDot;
+  public place: IconDefinition = faCalendar;
 
-  constructor(
-    private colorThemeService: ColorThemeService,
-  ) {
-    this.colorThemeService.isDarkTheme$.subscribe((isDark: boolean) => {
-      this.isDarkTheme = isDark;
-    });
-  }
+  constructor(public colorThemeService: ColorThemeService,
+  ) {}
 
 
 }

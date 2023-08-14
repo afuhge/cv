@@ -1,5 +1,5 @@
 <div class="space-y-4">
-  <div [ngClass]="{'title-dark': isDarkTheme, 'title': !isDarkTheme}">
+  <div [ngClass]="{'title-dark': (colorThemeService.isDarkTheme$ | async) === true, 'title': (colorThemeService.isDarkTheme$ | async) === false}">
           <span class="highlight py-2 px-4 font-semibold">
               {{ 'resume.content.skills.headline' | translate }}
           </span>

@@ -6,14 +6,14 @@
     "header": {
       "name": "Annika Fuhge",
       "title": "Frontend Entwicklerin",
-      "quote": "Ich liebe es kreativ zu sein, mich selbst zu organisieren, aber auch als Team zu agieren. Mir ist meine persönliche Entwicklung besonders wichtig, sodass ich begeistert und motiviert an neue Dinge herangehe."
+      "quote": "Ich liebe es kreativ zu sein, mich zu organisieren und im Team zu arbeiten. Meine Weiterbildung ist mir wichtig, sodass ich begeistert und motiviert an neue Dinge herangehe."
     },
     "content": {
       "work-experience": {
         "headline": "Berufserfahrung",
         "douglas": {
           "company": "Parfümerie Douglas GmbH",
-          "title": "Junior Frontend Entwicklerin",
+          "title": "Frontend Entwicklerin",
           "description": "Entwicklung und Weiterentwicklung von internationalen CRM Produkten wie Kassensysteme und Kundenmanagement.",
           "date": "Mai 2021 - heute"
         },

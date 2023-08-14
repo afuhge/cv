@@ -6,7 +6,7 @@
     "header": {
       "name": "Annika Fuhge",
       "title": "Frontend Developer",
-      "quote": "I love to be creative, to organize myself, and to work in a team. My personal development is important to me, thus, I'm eager and willing to learn new skills."
+      "quote": "I love to be creative, to organize myself, and to work in a team. My personal development is very important to me, therefore, I am eager and willing to learn new skills."
 
     },
     "content": {
@@ -14,7 +14,7 @@
         "headline": "Experience",
         "douglas": {
           "company": "Parfümerie Douglas GmbH",
-          "title": "Junior Frontend Developer",
+          "title": "Frontend Developer",
           "description": "Development of international CRM products, such as POS systems and customer management.",
           "date": "May 2021 - today"
         },

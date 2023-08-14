@@ -1,24 +1,29 @@
 <div class="dark:text-white bg-gray-50 dark:bg-gray-700 p-6">
 
-  <div class="space-y-4" [ngClass]="{'grid-layout': !isDarkTheme, 'grid-layout-dark': isDarkTheme}">
-    <div>
-      <app-work-experience></app-work-experience>
-    </div>
-    <div>
-      <app-education></app-education>
-    </div>
-
-    <div>
-      <app-skills></app-skills>
-    </div>
-
-    <div>
-      <app-knowledge></app-knowledge>
+  <div class="grid grid-cols-12 gap-6" [ngClass]="{'grid-layout': (colorThemeService.isDarkTheme$ | async) === false,
+   'grid-layout-dark': (colorThemeService.isDarkTheme$ | async) === true}">
+    <div class="col-span-7 space-y-4">
+      <div>
+        <app-work-experience></app-work-experience>
+      </div>
+      <div>
+        <app-education></app-education>
+      </div>
     </div>
 
+    <div class="col-span-5 space-y-4 border-l-[1px] pl-4 border-[darkcyan] dark:border-[#2dd4bf]">
+      <div>
+        <app-skills></app-skills>
+      </div>
 
-    <div>
-      <app-hobbies></app-hobbies>
+      <div>
+        <app-knowledge></app-knowledge>
+      </div>
+
+
+      <div>
+        <app-hobbies></app-hobbies>
+      </div>
     </div>
 
   </div>

@@ -1,5 +1,6 @@
 <div class="space-y-4">
-  <div [ngClass]="{'title-dark': isDarkTheme, 'title': !isDarkTheme}">
+  <div [ngClass]="{'title-dark': (colorThemeService.isDarkTheme$ | async) === true,
+  'title': (colorThemeService.isDarkTheme$ | async) === false}">
           <span class="py-2 px-4 font-semibold">
             {{ 'resume.content.work-experience.headline' | translate }}
           </span>
@@ -7,60 +8,72 @@
   <div class="space-y-4 divide-y">
     <div class="space-y-2">
       <div class="flex justify-between items-center text-xs"> <!-- where when -->
-        <a href="https://corporate.douglas.de/home/" target="_blank" class=" hover:font-semibold flex space-x-2 cursor-pointer">
+        <a href="https://corporate.douglas.de/home/" target="_blank" class="hover:text-[#008B8BFF] hover:dark:text-teal-300 flex space-x-2 cursor-pointer items-center">
+          <fa-icon [icon]="place" class="text-gray-500 dark:text-gray-300"></fa-icon>
           <div>
             {{ 'resume.content.work-experience.douglas.company' | translate }}
           </div>
-          <fa-icon [icon]="link" class="text-gray-500 dark:text-gray-300"></fa-icon>
         </a>
-        <div> {{ 'resume.content.work-experience.douglas.date' | translate }}</div>
+        <div class="flex space-x-2">
+          <fa-icon [icon]="date" class="text-gray-500 dark:text-gray-300"></fa-icon>
+          <div> {{ 'resume.content.work-experience.douglas.date' | translate }}</div>
+        </div>
       </div>
       <div class="font-semibold">{{ 'resume.content.work-experience.douglas.title' | translate }}</div>
       <div>
         {{ 'resume.content.work-experience.douglas.description' | translate }}
       </div>
       <div class="skills">
-        <div class="p-1">
+        <div class="px-1 py-0.5">
           #Angular
         </div>
-        <div class="p-1">
+        <div class="px-1 py-0.5">
           #TypeScript
         </div>
-        <div class="p-1">
+        <div class="px-1 py-0.5">
           #tailwindcss
         </div>
-        <div class="p-1">
-          #Cypress
+        <div class="px-1 py-0.5">
+          #Robot Framework
+        </div>
+        <div class="px-1 py-0.5">
+         #MongoDB
+        </div>
+        <div class="px-1 py-0.5">
+          #.NET
         </div>
       </div>
     </div>
 
     <div class="space-y-2 pt-4">
       <div class="flex justify-between items-center text-xs"> <!-- where when -->
-        <a href="https://www.tu-dortmund.de/" target="_blank" class="hover:font-semibold flex space-x-2 cursor-pointer">
+        <a href="https://www.tu-dortmund.de/" target="_blank" class="hover:text-[#008B8BFF] hover:dark:text-teal-300 flex space-x-2 items-center cursor-pointer">
+          <fa-icon [icon]="place" class="text-gray-500 dark:text-gray-300"></fa-icon>
           <div>
             {{ 'resume.content.work-experience.tu-dortmund-wimi.company' | translate }}
           </div>
-          <fa-icon [icon]="link" class="text-gray-500 dark:text-gray-300"></fa-icon>
         </a>
-        <div>  {{ 'resume.content.work-experience.tu-dortmund-wimi.date' | translate }}</div>
+        <div class="flex space-x-2">
+          <fa-icon [icon]="date" class="text-gray-500 dark:text-gray-300"></fa-icon>
+          <div>  {{ 'resume.content.work-experience.tu-dortmund-wimi.date' | translate }}</div>
+        </div>
       </div>
       <div class="font-semibold">  {{ 'resume.content.work-experience.tu-dortmund-wimi.title' | translate }}</div>
       <div>  {{ 'resume.content.work-experience.tu-dortmund-wimi.description' | translate }}</div>
       <div class="skills">
-        <div class="p-1">
+        <div class="px-1 py-0.5">
           #Java
         </div>
-        <div class="p-1">
+        <div class="px-1 py-0.5">
           #Xtend
         </div>
-        <div class="p-1">
+        <div class="px-1 py-0.5">
           #MPS
         </div>
-        <div class="p-1">
+        <div class="px-1 py-0.5">
           #Graphiti
         </div>
-        <div class="p-1">
+        <div class="px-1 py-0.5">
           #Eclipse
         </div>
       </div>
@@ -68,30 +81,33 @@
 
     <div class="space-y-2 pt-4">
       <div class="flex justify-between items-center text-xs"> <!-- where when -->
-        <a href="https://www.tu-dortmund.de/" target="_blank" class="hover:font-semibold flex space-x-2 cursor-pointer">
+        <a href="https://www.tu-dortmund.de/" target="_blank" class="hover:text-[#008B8BFF] hover:dark:text-teal-300 flex space-x-2 cursor-pointer">
+          <fa-icon [icon]="place" class="text-gray-500 dark:text-gray-300"></fa-icon>
           <div>
             {{ 'resume.content.work-experience.tu-dortmund.company' | translate }}
           </div>
-          <fa-icon [icon]="link" class="text-gray-500 dark:text-gray-300"></fa-icon>
         </a>
-        <div> {{ 'resume.content.work-experience.tu-dortmund.date' | translate }}</div>
+        <div class="flex space-x-2">
+          <fa-icon [icon]="date" class="text-gray-500 dark:text-gray-300"></fa-icon>
+          <div> {{ 'resume.content.work-experience.tu-dortmund.date' | translate }}</div>
+        </div>
       </div>
       <div class="font-semibold">{{ 'resume.content.work-experience.tu-dortmund.title' | translate }}</div>
       <div>{{ 'resume.content.work-experience.tu-dortmund.description' | translate }}</div>
       <div class="skills">
-        <div class="p-1">
+        <div class="px-1 py-0.5">
           #Java
         </div>
-        <div class="p-1">
+        <div class="px-1 py-0.5">
           #Xtend
         </div>
-        <div class="p-1">
+        <div class="px-1 py-0.5">
           #Graphiti
         </div>
-        <div class="p-1">
+        <div class="px-1 py-0.5">
           #Eclipse
         </div>
-        <div class="p-1">
+        <div class="px-1 py-0.5">
           #JUnit
         </div>
       </div>
