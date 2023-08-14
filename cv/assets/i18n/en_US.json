@@ -1,0 +1,65 @@
+{
+  "header": {
+    "download": "Download"
+  },
+  "resume": {
+    "header": {
+      "name": "Annika Fuhge",
+      "title": "Frontend Developer",
+      "quote": "I love to be creative, to organize myself, and to work in a team. My personal development is very important to me, therefore, I am eager and willing to learn new skills."
+
+    },
+    "content": {
+      "work-experience": {
+        "headline": "Experience",
+        "douglas": {
+          "company": "Parfümerie Douglas GmbH",
+          "title": "Frontend Developer",
+          "description": "Development of international CRM products, such as POS systems and customer management.",
+          "date": "May 2021 - today"
+        },
+        "tu-dortmund-wimi": {
+          "company": "TU Dortmund",
+          "title": "Research Assistant",
+          "description": "Development of Domain Specific Languages (DSLs) incl. model transformation with MPS, further development of existing DSLs with focus on UI/UX.",
+          "date": "August 2020 - April 2021"
+        },
+        "tu-dortmund": {
+          "company": "TU Dortmund",
+          "title": "Student/Scientific Assistant",
+          "description": "Further development of DSLs through views, validation, and user-friendly design.",
+          "date": "June 2016 - July 2020"
+        }
+      },
+      "education": {
+        "headline": "Education",
+        "master": {
+          "company": "TU Dortmund",
+          "title": "Master of Science in Computer Science",
+          "description": "LiveDocs: Document-Centric Process Management",
+          "date": "April 2018 - July 2020"
+        },
+        "bachelor": {
+          "company": "TU Dortmund",
+          "title": "Bachelor of Science in Computer Science",
+          "description": "Graphic modeling of Cinco product specifications",
+          "date": "October 2014 - May 2018"
+        }
+      },
+      "skills": {
+        "headline": "Skills",
+        "language": {
+          "title": "Languages",
+          "german": "German",
+          "english": "English"
+        },
+        "programming-languages": {
+          "title": "Programming-/Markuplanguages"
+        }
+      },
+      "knowledge": {
+        "headline": "Knowledge"
+      }
+    }
+  }
+}
