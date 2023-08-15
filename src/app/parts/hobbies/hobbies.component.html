@@ -1,25 +1,24 @@
-<div class="space-y-4 space-x-2">
-  <div [ngClass]="{'title-dark': (colorThemeService.isDarkTheme$ | async) === true, 'title': (colorThemeService.isDarkTheme$ | async) === false}">
-          <span class="highlight py-2 px-4 font-semibold">
-            Hobbies
-          </span>
-  </div>
+<div class="space-y-4">
+  <app-headline [title]="'Hobbies'"></app-headline>
 
-  <div class="flex flex-wrap items-center space-x-6">
+  <div class="grid grid-cols-3 space-y-4 gap-2 items-center">
     <div>
-      <img width="32" src="assets/dancing.png" class="filter dark:invert" alt="dancing">
+      <img width="34" src="assets/dancing.png" class="filter dark:invert" alt="dancing">
     </div>
     <div>
-      <img  width="32" src="assets/crochet.png" class="filter dark:invert" alt="ukulele">
+      <img  width="34" src="assets/crochet.png" class="filter dark:invert" alt="ukulele">
     </div>
     <div>
-      <img  width="32" src="assets/ukulele.png" class="filter dark:invert" alt="ukulele">
+      <img  width="34" src="assets/ukulele.png" class="filter dark:invert" alt="ukulele">
     </div>
     <div>
-      <img  width="32" src="assets/programming.png" class="filter dark:invert" alt="programming">
+      <img  width="34" src="assets/programming.png" class="filter dark:invert" alt="programming">
     </div>
     <div>
-      <img  width="32" src="assets/walking.png" class="filter dark:invert" alt="walking">
+      <img  width="34" src="assets/book.png" class="filter dark:invert" alt="walking">
+    </div>
+    <div>
+      <img  width="34" src="assets/walking.png" class="filter dark:invert" alt="walking">
     </div>
   </div>
 </div>

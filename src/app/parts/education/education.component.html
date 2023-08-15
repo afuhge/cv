@@ -1,9 +1,5 @@
 <div class="space-y-4">
-  <div [ngClass]="{'title-dark': (colorThemeService.isDarkTheme$ | async) === true, 'title': (colorThemeService.isDarkTheme$ | async) === false}">
-          <span class="highlight py-2 px-4 font-semibold">
-             {{ 'resume.content.education.headline' | translate }}
-          </span>
-  </div>
+  <app-headline [title]="'resume.content.education.headline' | translate"></app-headline>
 
   <div class="space-y-4 divide-y">
     <div class="space-y-2">

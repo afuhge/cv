@@ -5,6 +5,7 @@ import { ColorThemeService } from '../../../services/color-theme.service';
 import { AsyncPipe, CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HeadlineComponent } from '../../components/headline.component';
 
 @Component({
   selector: 'app-education',
@@ -16,6 +17,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     TranslateModule,
     FontAwesomeModule,
     CommonModule,
+    HeadlineComponent,
   ]
 })
 export class EducationComponent {

@@ -1,9 +1,5 @@
 <div class="space-y-4">
-  <div [ngClass]="{'title-dark': (colorThemeService.isDarkTheme$ | async) === true, 'title': (colorThemeService.isDarkTheme$ | async) === false}">
-          <span class="highlight py-2 px-4 font-semibold">
-              {{ 'resume.content.knowledge.headline' | translate }}
-          </span>
-  </div>
+  <app-headline [title]="'resume.content.knowledge.headline' | translate"></app-headline>
 
   <div class="flex flex-wrap -m-1 text-white">
     <div class="p-1" *ngFor="let skill of skills">

@@ -1,10 +1,6 @@
 <div class="space-y-4">
-  <div [ngClass]="{'title-dark': (colorThemeService.isDarkTheme$ | async) === true,
-  'title': (colorThemeService.isDarkTheme$ | async) === false}">
-          <span class="py-2 px-4 font-semibold">
-            {{ 'resume.content.work-experience.headline' | translate }}
-          </span>
-  </div>
+  <app-headline [title]="'resume.content.work-experience.headline' | translate"></app-headline>
+
   <div class="space-y-4 divide-y">
     <div class="space-y-2">
       <div class="flex justify-between items-center text-xs"> <!-- where when -->
