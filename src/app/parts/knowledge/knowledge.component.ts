@@ -15,7 +15,7 @@ import { TranslateModule } from '@ngx-translate/core';
   ]
 })
 export class KnowledgeComponent {
-
+    public skills = ['Git', 'npm', 'MongoDB', 'Node.js', 'CI/CD', 'Figma', 'ESLint', 'Docker', 'Cypress','Jira', 'Confluence'];
     constructor(
       public colorThemeService: ColorThemeService,
     ) {

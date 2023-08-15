@@ -16,6 +16,8 @@ import { TranslateModule } from '@ngx-translate/core';
   ]
 })
 export class SkillsComponent {
+  public languages = ['HTML', 'CSS', 'TypeScript', 'JavaScript', 'Java','Xtend', 'C#'];
+  public frameworks = ['Angular', 'tailwindcss', 'Bootstrap', 'Robot Framework', '.NET', 'Vue.js', 'Vuetify', 'Express.js'];
   constructor(public colorThemeService: ColorThemeService) {
   }
 

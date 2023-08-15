@@ -30,41 +30,10 @@
   <!-- programmiersprachen -->
   <div class="space-y-2">
     <div class="subtitle">{{ 'resume.content.skills.programming-languages.title' | translate }}</div>
-    <div class="space-y-1">
-      <div class="flex justify-between items-center">
-        <div>HTML/CSS</div>
-        <div class="flex space-x-2">
-          <div *ngFor="let i of [0,1,2,3,4];"
-               class="w-4 h-4 rounded-md primary-bg-color"
-               [ngClass]="{'opacity-20': i >= 4}">
-          </div>
-        </div>
-      </div>
-      <div class="flex justify-between items-center">
-        <div>Typescript</div>
-        <div class="flex space-x-2">
-          <div *ngFor="let i of [0,1,2,3,4];"
-               class="w-4 h-4 rounded-md primary-bg-color"
-               [ngClass]="{'opacity-20': i >= 4}">
-          </div>
-        </div>
-      </div>
-      <div class="flex justify-between items-center">
-        <div>Java</div>
-        <div class="flex space-x-2">
-          <div *ngFor="let i of [0,1,2,3,4];"
-               class="w-4 h-4 rounded-md primary-bg-color"
-               [ngClass]="{'opacity-20': i >= 3}">
-          </div>
-        </div>
-      </div>
-      <div class="flex justify-between items-center">
-        <div>Xtend</div>
-        <div class="flex space-x-2">
-          <div *ngFor="let i of [0,1,2,3,4];"
-               class="w-4 h-4 rounded-md primary-bg-color"
-               [ngClass]="{'opacity-20': i >= 3}">
-          </div>
+    <div class="flex flex-wrap -m-1 text-white">
+      <div class="p-1" *ngFor="let language of languages">
+        <div class="badge">
+          {{ language }}
         </div>
       </div>
     </div>
@@ -73,41 +42,10 @@
   <!-- frameworks--->
   <div class="space-y-2">
     <div class="subtitle">Frameworks</div>
-    <div class="space-y-1">
-      <div class="flex justify-between items-center">
-        <div>Angular</div>
-        <div class="flex space-x-2">
-          <div *ngFor="let i of [0,1,2,3,4];"
-               class="w-4 h-4 rounded-md primary-bg-color"
-               [ngClass]="{'opacity-20': i >= 3}">
-          </div>
-        </div>
-      </div>
-      <div class="flex justify-between items-center">
-        <div>AngularDart</div>
-        <div class="flex space-x-2">
-          <div *ngFor="let i of [0,1,2,3,4];"
-               class="w-4 h-4 rounded-md primary-bg-color"
-               [ngClass]="{'opacity-20': i >= 2}">
-          </div>
-        </div>
-      </div>
-      <div class="flex justify-between items-center">
-        <div>tailwindcss</div>
-        <div class="flex space-x-2">
-          <div *ngFor="let i of [0,1,2,3,4];"
-               class="w-4 h-4 rounded-md primary-bg-color"
-               [ngClass]="{'opacity-20': i >= 4}">
-          </div>
-        </div>
-      </div>
-      <div class="flex justify-between items-center">
-        <div>Bootstrap</div>
-        <div class="flex space-x-2">
-          <div *ngFor="let i of [0,1,2,3,4];"
-               class="w-4 h-4 rounded-md primary-bg-color"
-               [ngClass]="{'opacity-20': i >= 3}">
-          </div>
+    <div class="flex flex-wrap -m-1 text-white">
+      <div class="p-1" *ngFor="let framework of frameworks; let i = index;">
+        <div class="badge">
+          {{ framework }}
         </div>
       </div>
     </div>
