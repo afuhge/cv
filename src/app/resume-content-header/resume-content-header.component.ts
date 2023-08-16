@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IconDefinition } from '@fortawesome/free-regular-svg-icons';
-import { faBirthdayCake, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faBirthdayCake, faEnvelope, faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { ColorThemeService } from '../../services/color-theme.service';
 import { TranslateModule } from '@ngx-translate/core';
@@ -23,10 +23,10 @@ export class ResumeContentHeaderComponent {
   envelope: IconDefinition = faEnvelope;
   birthdayCake: IconDefinition = faBirthdayCake;
   github: IconDefinition = faGithub;
+  left = faQuoteLeft;
+  right = faQuoteRight;
 
   constructor(
     public colorThemeService: ColorThemeService,
   ) {}
-
-  // todo: quotation-marks bei en /de fixen
 }

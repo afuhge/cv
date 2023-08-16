@@ -10,10 +10,12 @@
       </div>
     </div>
 
-    <div class="quote quotation-marks tracking-wider col-span-4">
+    <div class="tracking-wider col-span-4">
+     <fa-icon [icon]="left"></fa-icon>
       <span [ngClass]="{'quote-content': (colorThemeService.isDarkTheme$ | async) === false,'quote-content-dark': (colorThemeService.isDarkTheme$ | async) === true}">
       {{ 'resume.header.quote' | translate }}
       </span>
+      <fa-icon [icon]="right"></fa-icon>
     </div>
   </div>
 
