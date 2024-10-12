@@ -1,25 +1,17 @@
-<div class="text-white dark:text-gray-700 p-4 space-y-2 divide-y-[1px] dark:divide-gray-700 primary-bg-color">
-  <div class="md:grid print:grid grid-cols-6 gap-4 items-center space-y-4 md:text-left print:text-left text-center">
-    <div class="space-y-2 flex flex-col justify-start items-center col-span-2">
-      <div>
-        <img class="rounded-xl h-[100px]"
-             src="assets/Fuhge.png" alt="Annika Fuhge">
-      </div>
-      <div class="font-semibold text-lg">
-        {{ 'resume.header.name' | translate }}
-      </div>
+<div class="grid md:grid-cols-9 grid-cols-1  items-center md:justify-items-start justify-items-center primary-bg-color md:text-left print:text-left text-center">
+  <div class="pt-2 pl-1 col-span-2 md:mb-0 mb-4">
+    <img class="px-2 h-[120px]"
+         src="assets/Fuhge.png" alt="Annika Fuhge">
+  </div>
+  <div class="text-white dark:text-gray-700 col-span-4 md:mb-0 mb-4">
+    <div class="font-semibold text-2xl">
+      {{ 'resume.header.name' | translate }}
     </div>
+    <div class="text-lg"> {{ 'resume.content.work-experience.douglas.title' | translate }}</div>
 
-    <div class="quote racking-wider text-center col-span-4">
-     <fa-icon [icon]="left"></fa-icon>
-      <span [ngClass]="{'quote-content': (colorThemeService.isDarkTheme$ | async) === false,'quote-content-dark': (colorThemeService.isDarkTheme$ | async) === true}">
-      {{ 'resume.header.quote' | translate }}
-      </span>
-      <fa-icon [icon]="right"></fa-icon>
-    </div>
   </div>
 
-  <div class="pt-4 md:space-x-10 print:space-x-10 flex flex-col md:flex-row print:flex-row justify-center flex-wrap text-sm">
+  <div class="text-white dark:text-gray-700 cols-span-3 md:mb-0 mb-4">
     <div class="flex space-x-2 cursor-pointer hover:font-semibold">
       <fa-icon [icon]="envelope"></fa-icon>
       <a href="mailto:annikafuhge96@gmail.com" target="_blank">annikafuhge96@gmail.com</a>
@@ -34,3 +26,5 @@
     </div>
   </div>
 </div>
+
+

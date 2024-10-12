@@ -19,7 +19,7 @@ import { HeadlineComponent } from '../../components/headline.component';
 })
 export class SkillsComponent {
   public languages = ['HTML', 'CSS', 'TypeScript', 'JavaScript', 'Java','Xtend', 'C#'];
-  public frameworks = ['Angular', 'tailwindcss', 'Bootstrap', 'Express.js', 'Robot Framework', '.NET', 'Vue.js', 'Vuetify'];
+  public frameworks = ['Angular', 'tailwindcss',  'Vue.js', 'Quasar', 'Bootstrap', 'Express.js', 'Robot Framework', '.NET', 'Vuetify'];
   constructor(public colorThemeService: ColorThemeService) {
   }
 
