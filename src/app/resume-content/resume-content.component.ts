@@ -10,7 +10,6 @@ import { AsyncPipe, CommonModule } from '@angular/common';
 @Component({
   selector: 'app-resume-content',
   templateUrl: './resume-content.component.html',
-  styleUrls: ['./resume-content.component.scss'],
   standalone: true,
   imports: [
     WorkExperienceComponent,

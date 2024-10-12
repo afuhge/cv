@@ -1,4 +1,5 @@
 {
+  "grade": "Grade",
   "header": {
     "download": "Download"
   },
@@ -12,11 +13,17 @@
     "content": {
       "work-experience": {
         "headline": "Experience",
+        "ecostag": {
+          "company": "ecostag GmbH",
+          "title": "Frontend Developer",
+          "description": "Development of a ticketing platform with focus on the promoter area. Collaboration with Future Demand on the integration of their AI-based service e.g. for the creation of marketing campaigns.",
+          "date": "January 2024 - today"
+        },
         "douglas": {
           "company": "Parfümerie Douglas GmbH",
           "title": "Frontend Developer",
           "description": "Development of international CRM products including 360° view of the customer and POS frontends incl. communication with POS system (mobile device & terminal). Moderation of SCRUM events. Substitution for the product owner.",
-          "date": "May 2021 - today"
+          "date": "May 2021 - December 2023"
         },
         "tu-dortmund-wimi": {
           "company": "TU Dortmund",
@@ -40,7 +47,6 @@
           "date": "April 2018 - July 2020"
         },
         "bachelor": {
-          "company": "TU Dortmund",
           "title": "Bachelor of Science in Computer Science",
           "description": "Graphic modeling of Cinco product specifications",
           "date": "October 2014 - May 2018"

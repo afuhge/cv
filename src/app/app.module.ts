@@ -13,6 +13,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HeaderComponent } from './header/header.component';
 import { ResumeContentContainerComponent } from './resume-content-container/resume-content-container.component';
+import { ContentEntryComponent } from './components/content-entry/content-entry.component';
+import { HashtagListComponent } from './components/hashtag-list/hashtag-list.component';
+import { BadgeComponent } from './components/badge/badge.component';
 
 
 export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
@@ -43,6 +46,8 @@ export class MyMissingTranslationHandler implements MissingTranslationHandler {
     }),
     HeaderComponent,
     ResumeContentContainerComponent,
+    HashtagListComponent,
+    BadgeComponent,
   ],
   providers: [
     HttpClient,

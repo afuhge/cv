@@ -3,9 +3,7 @@
 
   <div class="flex flex-wrap -m-1 text-white">
     <div class="p-1" *ngFor="let skill of skills">
-      <div class="badge">
-        {{skill}}
-      </div>
+      <app-badge [item]="skill"></app-badge>
     </div>
   </div>
 </div>

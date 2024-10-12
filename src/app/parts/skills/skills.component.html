@@ -29,9 +29,7 @@
     <div class="subtitle">{{ 'resume.content.skills.programming-languages.title' | translate }}</div>
     <div class="flex flex-wrap -m-1 text-white">
       <div class="p-1" *ngFor="let language of languages">
-        <div class="badge">
-          {{ language }}
-        </div>
+        <app-badge [item]="language"></app-badge>
       </div>
     </div>
   </div>
@@ -40,10 +38,8 @@
   <div class="space-y-2">
     <div class="subtitle">Frameworks</div>
     <div class="flex flex-wrap -m-1 text-white">
-      <div class="p-1" *ngFor="let framework of frameworks; let i = index;">
-        <div class="badge">
-          {{ framework }}
-        </div>
+      <div class="p-1" *ngFor="let framework of frameworks">
+        <app-badge [item]="framework"></app-badge>
       </div>
     </div>
   </div>

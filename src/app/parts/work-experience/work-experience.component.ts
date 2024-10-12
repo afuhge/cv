@@ -1,28 +1,73 @@
 import { Component } from '@angular/core';
-import { faCalendar, IconDefinition } from '@fortawesome/free-regular-svg-icons';
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { ColorThemeService } from '../../../services/color-theme.service';
-import { AsyncPipe, CommonModule, NgIf } from '@angular/common';
+import { AsyncPipe, CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { HeadlineComponent } from '../../components/headline.component';
+import { HeadlineComponent } from '../../components/headline/headline.component';
+import { HashtagListComponent } from '../../components/hashtag-list/hashtag-list.component';
+import { Entry } from '../../../types/ContentEntry';
+import { ContentEntryComponent } from '../../components/content-entry/content-entry.component';
 
 @Component({
   selector: 'app-work-experience',
   templateUrl: './work-experience.component.html',
   standalone: true,
   imports: [
-    NgIf,
+    CommonModule,
     AsyncPipe,
     TranslateModule,
-    FontAwesomeModule,
-    CommonModule,
     HeadlineComponent,
+    HashtagListComponent,
+    ContentEntryComponent,
   ]
 })
 export class WorkExperienceComponent {
-  public date: IconDefinition = faLocationDot;
-  public place: IconDefinition = faCalendar;
+  private ecostagSkills: string[] = ['Vue.js', 'JavaScript', 'Quasar'];
+  private douglasSkills: string[] = ['Angular', 'TypeScript', 'tailwindcss', 'Robot Framework', 'MongoDB', '.NET']
+  private wimiSkills: string[] = ['Java', 'Xtend', 'MPS', 'Graphiti', 'Eclipse']
+  private shkSkills: string[] = ['Java', 'Xtend', 'Graphiti', 'Eclipse', 'JUnit']
+
+  public ecostag: Entry = {
+    company: {
+      title: 'resume.content.work-experience.ecostag.company',
+      href: 'https://about.stagedates.com/'
+    },
+    date: 'resume.content.work-experience.ecostag.date',
+    skills: this.ecostagSkills,
+    title: 'resume.content.work-experience.ecostag.title',
+    description: 'resume.content.work-experience.ecostag.description'
+  }
+
+  public douglas: Entry = {
+    company: {
+      title: 'resume.content.work-experience.douglas.company',
+      href: 'https://corporate.douglas.de/home/'
+    },
+    date: 'resume.content.work-experience.douglas.date',
+    skills: this.douglasSkills,
+    title: 'resume.content.work-experience.douglas.title',
+    description: 'resume.content.work-experience.douglas.description'
+  }
+
+  public wimi: Entry = {
+    company: {
+      title: 'resume.content.work-experience.tu-dortmund-wimi.company',
+      href: 'https://www.tu-dortmund.de/'
+    },
+    date: 'resume.content.work-experience.tu-dortmund-wimi.date',
+    skills: this.wimiSkills,
+    title: 'resume.content.work-experience.tu-dortmund-wimi.title',
+    description: 'resume.content.work-experience.tu-dortmund-wimi.description'
+  }
+
+  public shk: Entry = {
+    company: {
+      title: 'resume.content.work-experience.tu-dortmund-wimi.company',
+      href: 'https://www.tu-dortmund.de/'
+    },
+    date: 'resume.content.work-experience.tu-dortmund.date',
+    title: 'resume.content.work-experience.tu-dortmund.title',
+  }
+
 
   constructor(public colorThemeService: ColorThemeService,
   ) {}

@@ -3,41 +3,11 @@
 
   <div class="space-y-4 divide-y">
     <div class="space-y-2">
-      <div class="flex justify-between items-center text-xs"> <!-- where when -->
-        <a href="https://www.tu-dortmund.de/" target="_blank" class="flex space-x-2 cursor-pointer hover:text-[#008B8BFF] hover:dark:text-teal-300">
-          <fa-icon [icon]="place" class="text-gray-500 dark:text-gray-300"></fa-icon>
-          <div>
-            {{ 'resume.content.education.master.company' | translate }}
-          </div>
-        </a>
-        <div class="flex space-x-2">
-          <fa-icon [icon]="date" class="text-gray-500 dark:text-gray-300"></fa-icon>
-          <div> {{ 'resume.content.education.master.date' | translate }}</div>
-        </div>
-      </div>
-      <div class="font-semibold"> {{ 'resume.content.education.master.title' | translate }}</div>
-      <div>
-        {{ 'resume.content.education.master.description' | translate }}
-      </div>
+      <app-content-entry [entry]="master"></app-content-entry>
     </div>
 
     <div class="space-y-2 pt-4">
-      <div class="flex justify-between items-center text-xs" > <!-- where when -->
-        <a href="https://www.tu-dortmund.de/" target="_blank" class="hover:text-[#008B8BFF] hover:dark:text-teal-300 flex space-x-2 cursor-pointer">
-          <fa-icon [icon]="place" class="text-gray-500 dark:text-gray-300"></fa-icon>
-          <div>
-            {{ 'resume.content.education.bachelor.company' | translate }}
-          </div>
-        </a>
-        <div class="flex space-x-2">
-          <fa-icon [icon]="date" class="text-gray-500 dark:text-gray-300"></fa-icon>
-         <div>  {{ 'resume.content.education.bachelor.date' | translate }}</div>
-        </div>
-      </div>
-      <div class="font-semibold">  {{ 'resume.content.education.bachelor.title' | translate }}</div>
-      <div>
-        {{ 'resume.content.education.bachelor.description' | translate }}
-      </div>
+      <app-content-entry [entry]="bachelor"></app-content-entry>
     </div>
   </div>
 

@@ -1,4 +1,5 @@
 {
+  "grade": "Note",
   "header": {
     "download": "Download"
   },
@@ -11,11 +12,17 @@
     "content": {
       "work-experience": {
         "headline": "Berufserfahrung",
+        "ecostag": {
+          "company": "ecostag GmbH",
+          "title": "Frontend Entwicklerin",
+          "description": "Weiterentwicklung einer Ticketingplattform mit besonderem Fokus auf den Promoterbereich. Enge Zusammenarbeit mit Future Demand bei der Integration ihres KI-basierten Services u.a. für die Erstellung von Marketingkampagnen.",
+          "date": "Januar 2024 - heute"
+        },
         "douglas": {
           "company": "Parfümerie Douglas GmbH",
           "title": "Frontend Entwicklerin",
           "description": "Entwicklung von internationalen CRM Produkten u.a. 360° Ansicht auf den Kunden und Kassenfrontends inkl. Kommunikation mit dem Kassensytem (Mobilgerät & Terminal). Moderation von SCRUM Events. Vertretung für den Product Owner.",
-          "date": "Mai 2021 - heute"
+          "date": "Mai 2021 - Dezember 2023"
         },
         "tu-dortmund-wimi": {
           "company": "TU Dortmund",
@@ -24,7 +31,6 @@
           "date": "August 2020 - April 2021"
         },
         "tu-dortmund": {
-          "company": "TU Dortmund",
           "title": "Studentische/Wissenschaftliche Hilfskraft",
           "description": "Weiterentwicklung von DSLs durch Views, Validierung und nutzerfreundlichem Design.",
           "date": "Juni 2016 - Juli 2020"

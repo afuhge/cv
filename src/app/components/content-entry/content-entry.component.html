@@ -1,0 +1,24 @@
+<div class="space-y-2">
+  <div class="flex justify-between items-center text-xs"> <!-- where when -->
+    <a [href]="entry.company.href" target="_blank" class="hover:text-[#008B8BFF] hover:dark:text-teal-300 flex space-x-2 cursor-pointer items-center">
+      <fa-icon [icon]="place" class="text-gray-500 dark:text-gray-300"></fa-icon>
+      <div>
+        {{ entry.company.title  | translate }}
+      </div>
+    </a>
+    <div class="flex space-x-2">
+      <fa-icon [icon]="date" class="text-gray-500 dark:text-gray-300"></fa-icon>
+      <div> {{ entry.date | translate }}</div>
+    </div>
+  </div>
+  <div class="flex justify-between">
+    <div class="font-semibold">{{ entry.title | translate }}</div>
+    <div *ngIf="entry.grade" class="text-xs">  {{ 'grade' | translate }}: {{entry.grade}}</div>
+  </div>
+  <div *ngIf="entry.description">
+    {{ entry.description | translate }}
+  </div>
+  <div *ngIf="entry.skills">
+    <app-hashtag-list [skills]="entry.skills || []"></app-hashtag-list>
+  </div>
+</div>
