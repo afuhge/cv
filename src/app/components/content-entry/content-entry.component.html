@@ -12,12 +12,12 @@
     </div>
   </div>
   <div class="flex justify-between">
-    <div class="font-semibold">{{ entry.title | translate }}</div>
+    <h4 class="font-semibold">{{ entry.title | translate }}</h4>
     <div *ngIf="entry.grade" class="text-xs">  {{ 'grade' | translate }}: {{entry.grade}}</div>
   </div>
-  <div *ngIf="entry.description">
+  <p *ngIf="entry.description">
     {{ entry.description | translate }}
-  </div>
+  </p>
   <div *ngIf="entry.skills">
     <app-hashtag-list [skills]="entry.skills || []"></app-hashtag-list>
   </div>

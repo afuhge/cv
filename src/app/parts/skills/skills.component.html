@@ -3,7 +3,7 @@
 
   <!-- languages -->
   <div class="space-y-2">
-    <div class="subtitle">{{ 'resume.content.skills.language.title' | translate }}</div>
+    <h4 class="subtitle">{{ 'resume.content.skills.language.title' | translate }}</h4>
     <div class="space-y-1">
       <div class="flex justify-between items-center">
         <div>{{ 'resume.content.skills.language.german' | translate }}</div>
@@ -26,7 +26,7 @@
   </div>
   <!-- programmiersprachen -->
   <div class="space-y-2">
-    <div class="subtitle">{{ 'resume.content.skills.programming-languages.title' | translate }}</div>
+    <h4 class="subtitle">{{ 'resume.content.skills.programming-languages.title' | translate }}</h4>
     <div class="flex flex-wrap -m-1 text-white">
       <div class="p-1" *ngFor="let language of languages">
         <app-badge [item]="language"></app-badge>
@@ -36,7 +36,7 @@
 
   <!-- frameworks--->
   <div class="space-y-2">
-    <div class="subtitle">Frameworks</div>
+    <h4 class="subtitle">Frameworks</h4>
     <div class="flex flex-wrap -m-1 text-white">
       <div class="p-1" *ngFor="let framework of frameworks">
         <app-badge [item]="framework"></app-badge>
