@@ -1,9 +1,9 @@
-<section class="grid md:grid-cols-9 grid-cols-1 md:gap-x-4 gap-0 items-center md:justify-items-start justify-items-center primary-bg-color md:text-left print:text-left text-center">
-  <div class="pt-2 col-span-2 md:mb-0 mb-4 bg-[#87a9a9] dark:bg-[#3F636B] w-full flex justify-center">
+<section class="grid md:grid-cols-9 print:grid-cols-9 grid-cols-1 md:gap-x-4 print:gap-x-4 gap-0 items-center md:justify-items-start print:justify-items-start justify-items-center primary-bg-color md:text-left print:text-left text-center">
+  <div class="pt-2 col-span-2 md:mb-0 print:mb-0 mb-4 bg-[#87a9a9] dark:bg-[#3F636B] w-full flex justify-center">
     <img class="px-2 h-[140px]"
          src="assets/Fuhge.png" alt="Annika Fuhge">
   </div>
-  <div class="text-white dark:text-gray-700 col-span-4 md:mb-0 mb-4">
+  <div class="text-white dark:text-gray-700 col-span-4 md:mb-0 print:mb-0 mb-4">
     <h2 class="font-semibold text-2xl">
       {{ 'resume.header.name' | translate }}
     </h2>
@@ -11,7 +11,7 @@
 
   </div>
 
-  <section class="text-white dark:text-gray-700 cols-span-3 md:mb-0 mb-4">
+  <section class="text-white dark:text-gray-700 cols-span-3 md:mb-0 print:mb-0 mb-4">
     <div class="flex space-x-2 justify-between cursor-pointer hover:font-semibold">
       <fa-icon [icon]="envelope"></fa-icon>
       <a href="mailto:annikafuhge96@gmail.com" target="_blank">annikafuhge96@gmail.com</a>
