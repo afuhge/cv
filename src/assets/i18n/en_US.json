@@ -109,7 +109,7 @@
           "description": "This ToDo application was developed for practice purposes to deepen the basic and to experiment with theming and drag & drop."
         },
         "blog": {
-          "description": "This Brigerton inspired blog serves as a practice project with Vue.js."
+          "description": "This Bridgerton inspired blog serves as a practice project with Vue.js."
         }
       }
     }
