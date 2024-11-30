@@ -1,5 +1,18 @@
-<div class=" my-4">
-  <h4 class="font-semibold">{{ projectTitle }}</h4>
+<div class="my-4">
+  <div class="flex  items-center justify-between">
+    <h4 class="font-semibold">{{ projectTitle }}</h4>
+    <div class="flex space-x-2 py-2">
+      <a *ngIf="repo" [href]="repo" class="hover:text-[#008B8BFF] hover:dark:text-teal-300 flex space-x-2 cursor-pointer items-center" target="_blank">
+        <fa-icon [icon]="link" class="text-xs text-gray-500 dark:text-gray-300"></fa-icon>
+        <span>Repository</span>
+      </a>
+      <a *ngIf="website" [href]="website" class="hover:text-[#008B8BFF] hover:dark:text-teal-300 flex space-x-2 cursor-pointer items-center" target="_blank">
+        <fa-icon [icon]="link" class="text-xs text-gray-500 dark:text-gray-300"></fa-icon>
+        <span>Website</span>
+      </a>
+    </div>
+  </div>
+
   <ul class=" pl-6 list-disc">
     <ng-content></ng-content>
   </ul>

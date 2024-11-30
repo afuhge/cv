@@ -21,4 +21,12 @@ export class LanguageService {
     this.localStorageHelper.setLanguageItem(language);
     this.translate.use(language);
   }
+
+  public getLanguage(): string {
+    if (this.localStorageHelper.getLanguageItem()) {
+     return this.localStorageHelper.getLanguageItem();
+    } else {
+      return 'de_DE';
+    }
+  }
 }

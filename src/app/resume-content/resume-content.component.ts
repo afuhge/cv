@@ -7,6 +7,8 @@ import { KnowledgeComponent } from '../parts/knowledge/knowledge.component';
 import { HobbiesComponent } from '../parts/hobbies/hobbies.component';
 import { AsyncPipe, CommonModule } from '@angular/common';
 import { ProjectsComponent } from '../parts/projects/projects.component';
+import { PrivateProjectsComponent } from '../components/private-projects/private-projects.component';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-resume-content',
@@ -21,10 +23,11 @@ import { ProjectsComponent } from '../parts/projects/projects.component';
     AsyncPipe,
     CommonModule,
     ProjectsComponent,
+    PrivateProjectsComponent,
   ]
 })
 export class ResumeContentComponent {
-  constructor(public colorThemeService: ColorThemeService) {
+  constructor(public colorThemeService: ColorThemeService, public languageService: LanguageService) {
   }
 
 }
