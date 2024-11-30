@@ -93,6 +93,24 @@
           "2": "Entwicklung grafischer DSLs zur Ablösung textueller DSLs.",
           "3": "Nutzung des Framework, um formularbasierte Prozesse in einer Webapplikation zu modellieren."
         }
+      },
+      "privateProjects": {
+        "headline": "Private Projekte",
+        "cv": {
+          "description": "Webapplikation die den persönlichen Lebenslauf umfasst. Nutzer können sowohl das Theme als auch die Sprache anpassen. Außerdem kann der Lebenslauf als PDF heruntergeladen werden."
+        },
+        "cloudy": {
+          "description": "Wetter App, deren Fokus besonders auf dem Glassmorphismus Design liegt."
+        },
+        "tic": {
+          "description": "Das Tic Tac Toe-Spiel bietet ein modernes Design, welches zuvor in Figma erstellt wurde."
+        },
+        "todo": {
+          "description": "Diese ToDo-Anwendung wurde zu Übungszwecken entwickelt, um die Grundladen zu vertiefen und mit Theming sowie Drag&Drop zu experimentieren."
+        },
+        "blog": {
+          "description": "Dieser Brigerton inspirierte Blog dient als Übungsprojekt mit Vue.js."
+        }
       }
     }
   }

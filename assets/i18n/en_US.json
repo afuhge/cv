@@ -93,6 +93,24 @@
           "2": "Development of graphical DSLs to replace textual DSLs.",
           "3": "Use of the framework to model form-based processes in a web application."
         }
+      },
+      "privateProjects": {
+        "headline": "Private Projekte",
+        "cv": {
+          "description": "Web application that includes the personal CV. Users can customise both the theme and the language. The CV can also be downloaded as a PDF."
+        },
+        "cloudy": {
+          "description": "Weather app with a special focus on the glass morphism design."
+        },
+        "tic": {
+          "description": "The Tic Tac Toe game offers a modern design, which was previously created in Figma."
+        },
+        "todo": {
+          "description": "This ToDo application was developed for practice purposes to deepen the basic and to experiment with theming and drag & drop."
+        },
+        "blog": {
+          "description": "This Brigerton inspired blog serves as a practice project with Vue.js."
+        }
       }
     }
   }
