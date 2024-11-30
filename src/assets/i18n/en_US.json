@@ -51,6 +51,9 @@
           "title": "Bachelor of Science in Computer Science",
           "description": "Graphic modeling of Cinco product specifications",
           "date": "October 2014 - May 2018"
+        },
+        "university": {
+          "date": "June 2016 - April 2021"
         }
       },
       "skills": {
@@ -66,6 +69,30 @@
       },
       "knowledge": {
         "headline": "Knowledge"
+      },
+      "projects": {
+        "headline": "Projects",
+        "stagedates": {
+          "1": "Responsible for the integration of new API interfaces for a ticketing platform in close compliance with specified design guidelines.",
+          "2": "Integration of a third-party system (Future Demand) for the use of AI-based services.",
+          "3": "Responsible for the development and maintenance of a component library."
+        },
+        "cc": {
+          "1": "Refactoring of the customer data platform and integration of new features.",
+          "2": "Implementation of end-to-end tests and mockups."
+        },
+        "pos": {
+          "1": "Refactoring and development of new features for the stationary and mobile POS, with a special focus on communication with the POS system.",
+          "2": "Mainly responsible for the implementation of the mobile POS and its quality assurance through end-to-end tests."
+        },
+        "ui": {
+          "1": "Development of a cross-project component library and its use in day-to-day business."
+        },
+        "cinco": {
+          "1": "Development and creation of jUnit tests of a generator-driven development framework for domain-specific graphical modelling tools.",
+          "2": "Development of graphical DSLs to replace textual DSLs.",
+          "3": "Use of the framework to model form-based processes in a web application."
+        }
       }
     }
   }

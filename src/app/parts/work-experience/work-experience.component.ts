@@ -23,8 +23,6 @@ import { ContentEntryComponent } from '../../components/content-entry/content-en
 export class WorkExperienceComponent {
   private ecostagSkills: string[] = ['Vue.js', 'JavaScript', 'Quasar'];
   private douglasSkills: string[] = ['Angular', 'TypeScript', 'tailwindcss', 'Robot Framework', 'MongoDB', '.NET']
-  private wimiSkills: string[] = ['Java', 'Xtend', 'MPS', 'Graphiti', 'Eclipse']
-  private shkSkills: string[] = ['Java', 'Xtend', 'Graphiti', 'Eclipse', 'JUnit']
 
   public ecostag: Entry = {
     company: {
@@ -54,7 +52,6 @@ export class WorkExperienceComponent {
       href: 'https://www.tu-dortmund.de/'
     },
     date: 'resume.content.work-experience.tu-dortmund-wimi.date',
-    skills: this.wimiSkills,
     title: 'resume.content.work-experience.tu-dortmund-wimi.title',
     description: 'resume.content.work-experience.tu-dortmund-wimi.description'
   }

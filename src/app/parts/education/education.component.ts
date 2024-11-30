@@ -24,11 +24,10 @@ import { ContentEntryComponent } from '../../components/content-entry/content-en
 })
 export class EducationComponent {
   public date = faLocationDot;
-  public place = faCalendar;
 
   public master: Entry = {
     company: {
-      title: 'resume.content.education.master.title',
+      title: 'resume.content.education.master.company',
       href: 'https://www.tu-dortmund.de/'
     },
     date: 'resume.content.education.master.date',

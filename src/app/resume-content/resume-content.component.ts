@@ -6,6 +6,7 @@ import { SkillsComponent } from '../parts/skills/skills.component';
 import { KnowledgeComponent } from '../parts/knowledge/knowledge.component';
 import { HobbiesComponent } from '../parts/hobbies/hobbies.component';
 import { AsyncPipe, CommonModule } from '@angular/common';
+import { ProjectsComponent } from '../parts/projects/projects.component';
 
 @Component({
   selector: 'app-resume-content',
@@ -19,6 +20,7 @@ import { AsyncPipe, CommonModule } from '@angular/common';
     HobbiesComponent,
     AsyncPipe,
     CommonModule,
+    ProjectsComponent,
   ]
 })
 export class ResumeContentComponent {

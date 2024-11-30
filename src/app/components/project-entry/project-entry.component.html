@@ -1,0 +1,15 @@
+<section class="mt-4 space-y-2">
+  <div class="flex justify-between items-center text-xs">
+    <a [href]="href" target="_blank" class="hover:text-[#008B8BFF] hover:dark:text-teal-300 flex space-x-2 cursor-pointer items-center">
+      <fa-icon [icon]="place" class="text-gray-500 dark:text-gray-300"></fa-icon>
+      <div>
+        {{ title }}
+      </div>
+    </a>
+    <div class="flex space-x-2">
+      <fa-icon [icon]="date" class="text-gray-500 dark:text-gray-300"></fa-icon>
+      <div>{{ companyDate }}</div>
+    </div>
+  </div>
+ <ng-content></ng-content>
+</section>

@@ -1,0 +1,40 @@
+<app-headline [title]="'resume.content.projects.headline' | translate"></app-headline>
+<div class="border-b-[1px]">
+  <app-project-entry [title]="ecostag.company.title  | translate" [href]="ecostag.company.href"
+                     [companyDate]="ecostag.date | translate">
+    <app-project-entry-description projectTitle="stagedates">
+      <li *ngFor=" let item of [1,2,3]; let i = index;"> {{ 'resume.content.projects.stagedates.'+ (i+1) | translate }}</li>
+    </app-project-entry-description>
+  </app-project-entry>
+</div>
+
+<div class="border-b-[1px]">
+  <app-project-entry [title]="douglas.company.title  | translate" [href]="douglas.company.href"
+                     [companyDate]="douglas.date | translate">
+    <app-project-entry-description projectTitle="CustomerCare">
+      <li *ngFor=" let item of [1,2]; let i = index;"> {{ 'resume.content.projects.cc.'+ (i+1) | translate }}</li>
+
+    </app-project-entry-description>
+    <app-project-entry-description projectTitle="POS & mobilePOS">
+      <li *ngFor=" let item of [1,2]; let i = index;"> {{ 'resume.content.projects.pos.'+ (i+1) | translate }}</li>
+
+    </app-project-entry-description>
+    <app-project-entry-description projectTitle="DouglasUI">
+      <li> {{ 'resume.content.projects.ui.1' | translate }}</li>
+
+    </app-project-entry-description>
+  </app-project-entry>
+</div>
+
+<div>
+  <app-project-entry [title]="university.company.title  | translate" [href]="university.company.href"
+                     [companyDate]="university.date | translate">
+    <app-project-entry-description projectTitle="Cinco">
+      <li *ngFor=" let item of [1,2,3]; let i = index;"> {{ 'resume.content.projects.cinco.'+ (i+1) | translate }}</li>
+    </app-project-entry-description>
+  </app-project-entry>
+</div>
+
+
+
+
