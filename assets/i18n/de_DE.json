@@ -51,6 +51,9 @@
           "title": "Bachelor of Science in Informatik",
           "description": "Graphische Modellierung von Cinco Produktspezifikationen",
           "date": "Oktober 2014 - Mai 2018"
+        },
+        "university": {
+          "date": "Juni 2016 - April 2021"
         }
       },
       "skills": {
@@ -66,6 +69,30 @@
       },
       "knowledge": {
         "headline": "Kenntnisse"
+      },
+      "projects": {
+        "headline": "Projekte",
+        "stagedates": {
+          "1": "Verantwortlich für die Integration neuer API-Schnittstellen für eine Ticketing-Plattform unter enger Einhaltung vorgegebener Designrichtlinien.",
+          "2": "Integration eines Drittsystems (Future Demand) zur Nutzung KI-basierter Services.",
+          "3": "Verantwortlich für den Aufbau und die Pflege einer Komponentenbibliothek."
+        },
+        "cc": {
+          "1": "Refactoring der Kundendatenplattform sowie Integration neuer Features.",
+          "2": "Erstellung von End-to-End Tests und Mockups."
+        },
+        "pos": {
+          "1": "Refactoring und Entwicklung neuer Features für die stationäre und mobile Kasse, mit besonderem Fokus auf die Kommunikation mit dem Kassensystem.",
+          "2": "Hauptverantwortlich für die Umsetzung der mobilen Kasse sowie deren Qualitätssicherung mittels End-to-End Tests."
+        },
+        "ui": {
+          "1": "Weiterentwicklung einer projektübergreifenden Komponentenbibliothek sowie dessen Einsatz im Tagesgeschäft."
+        },
+        "cinco": {
+          "1": "Weiterentwicklung und Erstellung von jUnit-Tests eines generatorgetriebenen Entwicklungsframeworks für domänenspezifische grafische Modellierungswerkzeuge.",
+          "2": "Entwicklung grafischer DSLs zur Ablösung textueller DSLs.",
+          "3": "Nutzung des Framework, um formularbasierte Prozesse in einer Webapplikation zu modellieren."
+        }
       }
     }
   }
