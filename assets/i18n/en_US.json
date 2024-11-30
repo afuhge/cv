@@ -95,7 +95,7 @@
         }
       },
       "privateProjects": {
-        "headline": "Private Projekte",
+        "headline": "Private Projects",
         "cv": {
           "description": "Web application that includes the personal CV. Users can customise both the theme and the language. The CV can also be downloaded as a PDF."
         },
