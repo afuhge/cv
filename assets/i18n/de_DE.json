@@ -109,7 +109,7 @@
           "description": "Diese ToDo-Anwendung wurde zu Übungszwecken entwickelt, um die Grundladen zu vertiefen und mit Theming sowie Drag&Drop zu experimentieren."
         },
         "blog": {
-          "description": "Dieser Brigerton inspirierte Blog dient als Übungsprojekt mit Vue.js."
+          "description": "Dieser Bridgerton inspirierte Blog dient als Übungsprojekt mit Vue.js."
         }
       }
     }
