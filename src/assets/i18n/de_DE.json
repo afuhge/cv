@@ -119,6 +119,12 @@
         },
         "blog": {
           "description": "Dieser Bridgerton inspirierte Blog dient als Übungsprojekt mit Vue.js."
+        },
+        "bookstoreUI": {
+          "description": "Webapplikation mit Angular 19 zum Verwalten von Büchern. Nutzer können das Theme selbst auswählen. (WIP)"
+        },
+        "bookstoreBackend": {
+          "description": "Ein Spring Boot + Kotlin Backend für das Verwalten von Büchern. (WIP)"
         }
       }
     }
