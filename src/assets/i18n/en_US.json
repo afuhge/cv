@@ -14,11 +14,17 @@
     "content": {
       "work-experience": {
         "headline": "Experience",
+        "cgm": {
+          "company": "CompuGroup Medical SE & Co. KGaA",
+          "title": "Frontend Developer",
+          "description": "Further development of the cloud-based dental software “CGM XDENT”.",
+          "date": "May 2025 - today"
+        },
         "ecostag": {
           "company": "ecostag GmbH",
           "title": "Frontend Developer",
           "description": "Development of a ticketing platform with focus on the promoter area. Collaboration with Future Demand on the integration of their AI-based services e.g. for the creation of marketing campaigns.",
-          "date": "January 2024 - today"
+          "date": "January 2024 - May 2025"
         },
         "douglas": {
           "company": "Parfümerie Douglas GmbH",
@@ -45,7 +51,7 @@
           "company": "TU Dortmund",
           "title": "Master of Science in Computer Science",
           "description": "LiveDocs: Document-Centric Process Management",
-          "date": "April 2018 - July 2020"
+          "date": "October 2014 - July 2020"
         },
         "bachelor": {
           "title": "Bachelor of Science in Computer Science",
@@ -72,6 +78,9 @@
       },
       "projects": {
         "headline": "Projects",
+        "cgm": {
+          "1": "Fixing bugs within the \"CGM XDENT\" dental software."
+        },
         "stagedates": {
           "1": "Responsible for the integration of new API interfaces for a ticketing platform in close compliance with specified design guidelines.",
           "2": "Integration of a third-party system (Future Demand) for the use of AI-based services.",

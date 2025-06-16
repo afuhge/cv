@@ -1,5 +1,15 @@
 <app-headline [title]="'resume.content.projects.headline' | translate"></app-headline>
 <div class="border-b-[1px]">
+  <app-project-entry [title]="cgm.company.title  | translate" [href]="cgm.company.href"
+                     [companyDate]="cgm.date | translate">
+    <app-project-entry-description projectTitle="CGM XDENT">
+      <li *ngFor=" let item of [1]; let i = index;"> {{ 'resume.content.projects.cgm.'+ (i+1) | translate }}</li>
+    </app-project-entry-description>
+  </app-project-entry>
+</div>
+
+
+<div class="border-b-[1px]">
   <app-project-entry [title]="ecostag.company.title  | translate" [href]="ecostag.company.href"
                      [companyDate]="ecostag.date | translate">
     <app-project-entry-description projectTitle="stagedates">

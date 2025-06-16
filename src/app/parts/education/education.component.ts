@@ -8,6 +8,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeadlineComponent } from '../../components/headline/headline.component';
 import { Entry } from '../../../types/ContentEntry';
 import { ContentEntryComponent } from '../../components/content-entry/content-entry.component';
+import { HashtagListComponent } from '../../components/hashtag-list/hashtag-list.component';
 
 @Component({
   selector: 'app-education',
@@ -20,6 +21,7 @@ import { ContentEntryComponent } from '../../components/content-entry/content-en
     CommonModule,
     HeadlineComponent,
     ContentEntryComponent,
+    HashtagListComponent,
   ]
 })
 export class EducationComponent {
@@ -45,4 +47,5 @@ export class EducationComponent {
   constructor(public colorThemeService: ColorThemeService) {
   }
 
+  protected readonly place = faCalendar;
 }

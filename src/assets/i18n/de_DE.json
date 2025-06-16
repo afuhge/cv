@@ -14,11 +14,17 @@
     "content": {
       "work-experience": {
         "headline": "Berufserfahrung",
+        "cgm": {
+          "company": "CompuGroup Medical SE & Co. KGaA",
+          "title": "Frontend Entwicklerin",
+          "description": "Weiterentwicklung der cloudbasierten Zahnsoftware \"CGM XDENT\".",
+          "date": "Mai 2025 - heute"
+        },
         "ecostag": {
           "company": "ecostag GmbH",
           "title": "Frontend Entwicklerin",
           "description": "Weiterentwicklung einer Ticketingplattform mit besonderem Fokus auf den Promoterbereich. Enge Zusammenarbeit mit Future Demand bei der Integration ihrer KI-basierten Services u.a. für die Erstellung von Marketingkampagnen.",
-          "date": "Januar 2024 - heute"
+          "date": "Januar 2024 - Mai 2025"
         },
         "douglas": {
           "company": "Parfümerie Douglas GmbH",
@@ -44,7 +50,7 @@
           "company": "TU Dortmund",
           "title": "Master of Science in Informatik",
           "description": "LiveDocs: Document-Centric Process Management",
-          "date": "April 2018 - Juli 2020"
+          "date": "Oktober 2014 - Juli 2020"
         },
         "bachelor": {
           "company": "TU Dortmund",
@@ -72,10 +78,13 @@
       },
       "projects": {
         "headline": "Projekte",
+        "cgm": {
+          "1": "Fixen von Bugs innerhalb der Zahnsoftware \"CGM XDENT\"."
+           },
         "stagedates": {
           "1": "Verantwortlich für die Integration neuer API-Schnittstellen für eine Ticketing-Plattform unter enger Einhaltung vorgegebener Designrichtlinien.",
           "2": "Integration eines Drittsystems (Future Demand) zur Nutzung KI-basierter Services.",
-          "3": "Verantwortlich für den Aufbau und die Pflege einer Komponentenbibliothek."
+          "3": "Verantwortlich für den Aufbau und Pflege einer Komponentenbibliothek."
         },
         "cc": {
           "1": "Refactoring der Kundendatenplattform sowie Integration neuer Features.",

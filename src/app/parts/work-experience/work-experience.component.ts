@@ -22,7 +22,20 @@ import { ContentEntryComponent } from '../../components/content-entry/content-en
 })
 export class WorkExperienceComponent {
   private ecostagSkills: string[] = ['Vue.js', 'JavaScript', 'Quasar'];
+  private cgmSkills: string[] = ['Angular', 'TypeScript'];
   private douglasSkills: string[] = ['Angular', 'TypeScript', 'tailwindcss', 'Robot Framework', 'MongoDB', '.NET']
+
+
+  public cgm: Entry = {
+    company: {
+      title: 'resume.content.work-experience.cgm.company',
+      href: 'https://www.cgm.com/'
+    },
+    date: 'resume.content.work-experience.cgm.date',
+    skills: this.cgmSkills,
+    title: 'resume.content.work-experience.cgm.title',
+    description: 'resume.content.work-experience.cgm.description'
+  }
 
   public ecostag: Entry = {
     company: {

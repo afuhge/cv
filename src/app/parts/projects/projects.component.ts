@@ -29,6 +29,14 @@ import { ProjectEntryComponent } from '../../components/project-entry/project-en
 export class ProjectsComponent {
   public date = faLocationDot;
 
+  public cgm: Entry = {
+    company: {
+      title: 'resume.content.work-experience.cgm.company',
+      href: 'https://www.cgm.com/'
+    },
+    date: 'resume.content.work-experience.cgm.date',
+  };
+
   public ecostag: Entry = {
     company: {
       title: 'resume.content.work-experience.ecostag.company',

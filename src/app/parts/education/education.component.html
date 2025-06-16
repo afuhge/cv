@@ -1,14 +1,26 @@
 <div class="space-y-4">
   <app-headline [title]="'resume.content.education.headline' | translate"></app-headline>
 
-  <div class="space-y-4 divide-y">
-    <div class="space-y-2">
-      <app-content-entry [entry]="master"></app-content-entry>
+  <div class="space-y-2">
+    <div class="flex justify-between items-center text-xs"> <!-- where when -->
+      <a [href]="master.company.href" target="_blank" class="hover:text-[#008B8BFF] hover:dark:text-teal-300 flex space-x-2 cursor-pointer items-center">
+        <fa-icon [icon]="place" class="text-gray-500 dark:text-gray-300"></fa-icon>
+        <div>
+          {{ master.company.title  | translate }}
+        </div>
+      </a>
+      <div class="flex space-x-2">
+        <fa-icon [icon]="date" class="text-gray-500 dark:text-gray-300"></fa-icon>
+        <div> {{ master.date | translate }}</div>
+      </div>
     </div>
-
-    <div class="space-y-2 pt-4">
-      <app-content-entry [entry]="bachelor"></app-content-entry>
+    <div class="flex justify-between">
+      <h4 class="font-semibold">{{ master.title ? (master.title | translate) : 'No title' }}</h4>
+      <div *ngIf="master.grade" class="text-xs">  {{ 'grade' | translate }}: {{master.grade}}</div>
+    </div>
+    <div class="flex justify-between">
+      <h4 class="font-semibold">{{ bachelor.title ? (bachelor.title | translate) : 'No title' }}</h4>
+      <div *ngIf="bachelor.grade" class="text-xs">  {{ 'grade' | translate }}: {{bachelor.grade}}</div>
     </div>
   </div>
-
 </div>
