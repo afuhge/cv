@@ -79,7 +79,8 @@
       "projects": {
         "headline": "Projekte",
         "cgm": {
-          "1": "Fixen von Bugs innerhalb der Zahnsoftware \"CGM XDENT\"."
+          "1": "Fixen von Bugs innerhalb der Zahnsoftware \"CGM XDENT\".",
+          "2": "Erstellen von Unit Tests mit Jest."
            },
         "stagedates": {
           "1": "Verantwortlich für die Integration neuer API-Schnittstellen für eine Ticketing-Plattform unter enger Einhaltung vorgegebener Designrichtlinien.",

@@ -79,7 +79,8 @@
       "projects": {
         "headline": "Projects",
         "cgm": {
-          "1": "Fixing bugs within the \"CGM XDENT\" dental software."
+          "1": "Fixing bugs within the \"CGM XDENT\" dental software.",
+          "2": "Writing unit tests with Jest."
         },
         "stagedates": {
           "1": "Responsible for the integration of new API interfaces for a ticketing platform in close compliance with specified design guidelines.",
