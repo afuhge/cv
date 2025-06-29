@@ -19,8 +19,8 @@ import { BadgeComponent } from '../../components/badge/badge.component';
   ]
 })
 export class SkillsComponent {
-  public languages = ['HTML', 'CSS', 'TypeScript', 'JavaScript', 'Java','Xtend', 'C#'];
-  public frameworks = ['Angular', 'tailwindcss',  'Vue.js', 'Quasar', 'Bootstrap', 'Express.js', 'Robot Framework', '.NET', 'Vuetify'];
+  public languages = ['HTML', 'CSS', 'TypeScript', 'JavaScript', 'Java','Xtend', 'Kotlin', 'C#',];
+  public frameworks = ['Angular', 'tailwindcss',  'Vue.js', 'Quasar', 'Robot Framework', 'Bootstrap','Spring Boot', '.NET', 'Vuetify', 'NestJS', 'Express.js', 'Cypress', 'Jest'];
   constructor(public colorThemeService: ColorThemeService) {
   }
 

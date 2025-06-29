@@ -10,7 +10,6 @@ import { BadgeComponent } from '../../components/badge/badge.component';
   templateUrl: './knowledge.component.html',
   standalone: true,
   imports: [
-    AsyncPipe,
     TranslateModule,
     CommonModule,
     HeadlineComponent,
@@ -18,7 +17,7 @@ import { BadgeComponent } from '../../components/badge/badge.component';
   ]
 })
 export class KnowledgeComponent {
-    public skills = ['Git', 'npm', 'MongoDB', 'Node.js', 'CI/CD', 'Figma', 'ESLint', 'Docker', 'Cypress','Jira', 'Confluence'];
+    public skills = ['Git', 'npm', 'MongoDB', 'PostgreSQL', 'Node.js', 'CI/CD', 'Figma', 'ESLint', 'Docker','Jira', 'Confluence'];
     constructor(
       public colorThemeService: ColorThemeService,
     ) {

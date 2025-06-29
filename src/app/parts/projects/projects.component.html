@@ -3,7 +3,7 @@
   <app-project-entry [title]="cgm.company.title  | translate" [href]="cgm.company.href"
                      [companyDate]="cgm.date | translate">
     <app-project-entry-description projectTitle="CGM XDENT">
-      <li *ngFor=" let item of [1]; let i = index;"> {{ 'resume.content.projects.cgm.'+ (i+1) | translate }}</li>
+      <li *ngFor=" let item of [1,2]; let i = index;"> {{ 'resume.content.projects.cgm.'+ (i+1) | translate }}</li>
     </app-project-entry-description>
   </app-project-entry>
 </div>

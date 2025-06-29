@@ -22,7 +22,7 @@ import { ContentEntryComponent } from '../../components/content-entry/content-en
 })
 export class WorkExperienceComponent {
   private ecostagSkills: string[] = ['Vue.js', 'JavaScript', 'Quasar'];
-  private cgmSkills: string[] = ['Angular', 'TypeScript'];
+  private cgmSkills: string[] = ['Angular', 'TypeScript', 'Jest'];
   private douglasSkills: string[] = ['Angular', 'TypeScript', 'tailwindcss', 'Robot Framework', 'MongoDB', '.NET']
 
 
