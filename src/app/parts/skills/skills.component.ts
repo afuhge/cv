@@ -10,7 +10,6 @@ import { BadgeComponent } from '../../components/badge/badge.component';
   templateUrl: './skills.component.html',
   standalone: true,
   imports: [
-    AsyncPipe,
     TranslateModule,
     NgFor,
     CommonModule,
